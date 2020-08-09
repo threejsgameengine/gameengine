@@ -1,0 +1,2 @@
+Overall goal
+    3D game engine with three.js and rendering engine
