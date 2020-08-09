@@ -2,7 +2,7 @@
 Stub function to get a minimum working example up
 */
 
-function createObject(gameScene) {
+function createObject() {
     let geometry = new THREE.BoxGeometry();
     let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 

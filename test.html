@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Testing web page</title>
         <style>
-            body: { margin: 0;}
-            canvas: {display: block;}
+            body { margin: 0;}
+            canvas {display: block;}
         </style>
     </head>
     <body>
@@ -13,18 +13,19 @@
         <script src="./graphics/scene.js"></script>
         <script src="./graphics/createobject.js"></script>
         <script>
+            var gameScene = {};
+
             function init() {
-                var gameScene = {};
-                gameScene = createScene(gameScene);
-                gameScene = createObject(gameScene);
-                gameScene.camera.position.z = 0;
-                animate(gameScene);
+                createScene();
+                createObject();
+                gameScene.camera.position.z = 500;
+                animate();
             }
 
-            function animate(gameScene) {
+            function animate() {
                 gameScene.renderer.render(gameScene.scene, gameScene.camera);
             }
-            document.addEventListener('DOMContenetLoaded', init);
+            init();
         </script>
     </body>
 </html>
