@@ -7,9 +7,14 @@
     <body>
         <script src="./lib/three.js"></script>
         <script src="./graphics/scene.js"></script>
+        <script src="./graphics/createobject"></script>
         <script>
-            var gameScene = {};
-            gameScene = createScene(gameScene);
+            function init() {
+                var gameScene = {};
+                gameScene = createScene(gameScene);
+                gameScene = createObject(gameScene);
+            }
+            document.addEventListener('DOMContenetLoaded', init);
         </script>
     </body>
 </html>
