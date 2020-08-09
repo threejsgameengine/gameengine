@@ -18,8 +18,8 @@ function createScene( gameScene ) {
         1000
     );
     gameScene.renderer = new THREE.WebGLRenderer();
-    gameScene.renderer.setSize(windoew.innerWidth, window.innerHeight);
+    gameScene.renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(gameScene.renderer.domElement);
 
-    returh gameScene;
+    return gameScene;
 }
